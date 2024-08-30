@@ -12,7 +12,7 @@ Key features include:
 
 This project was made possible thanks to a collaboration with
 
-<font color=red>Some logos inserted here</font>
+<img width="584" alt="image" src="https://github.com/Relaxed-System-Lab/HexGen/assets/85312798/27de0f94-49e4-41cd-9c31-98d344c2a7e9">
 
 ----------
 
