@@ -1,0 +1,6 @@
+__pycache__
+.DS_Store
+separate_state_dicts/
+*.pickle
+*.swp
+llama-scripts-logs/

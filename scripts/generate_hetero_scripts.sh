@@ -1,0 +1,14 @@
+python3 llama/generate_hetero_scripts.py \
+--retain-run-file \
+--model-size llama-7b \
+--current_device 5 \
+--master_addr 10.60.40.17 \
+--master_port 9997 \
+--layer-num 32 \
+--micro_batch_num 120  \
+--global_batch_size 120 \
+--hetero_configs "[[1] * 10] * 4" \
+--layer_partitions "[[4, 4, 2, 2, 4, 4, 4, 4, 2, 2] ] * 4"  \
+--devices_id "[[[0], [0], [1], [1], [2], [2], [3], [3], [4], [5]], [[0], [0], [1], [1], [2], [2], [3], [3], [4], [5]], [[0], [0], [1], [1], [2], [2], [3], [3], [4], [5]], [[0], [0], [1], [1], [2], [2], [3], [3], [4], [5]]]" \
+--accum-iter 1 \
+--run-iter 1 \
