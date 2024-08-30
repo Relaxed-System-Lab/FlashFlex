@@ -8,13 +8,13 @@ Key features include:
 - Each transformer layer could have different tensor model parallelism size.
 - Each pipeline could have different batch size, and each stage could have arbitrary number of transformer layers.
 
-----------
+<!-- ----------
 
 This project was made possible thanks to a collaboration with
 
 <img width="584" alt="image" src="https://github.com/Relaxed-System-Lab/HexGen/assets/85312798/27de0f94-49e4-41cd-9c31-98d344c2a7e9">
 
-----------
+---------- -->
 
 ## Environment
 
