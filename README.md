@@ -1,4 +1,4 @@
-# FlashFlex
+# FlashFlex: Accommodating Large Language Model Training over Heterogeneous Environment
 
 FlashFlex is a roubost system that accomodates **hybrid 3D parallelism** for Llama-2 model pretraining. 
 Key features include:
