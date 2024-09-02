@@ -1,7 +1,5 @@
 # FlashFlex
 
-<font color=red>Papar link </font>
-
 FlashFlex is a roubost system that accomodates **hybrid 3D parallelism** for Llama-2 model pretraining. 
 Key features include:
 - Versitile support for hybrid pipeline parallelism, tensor parallelism and data parallelism.
