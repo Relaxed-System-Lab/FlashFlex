@@ -20,7 +20,7 @@ This project was made possible thanks to a collaboration with
 
 - [Environment](#environment)
 - [Asymmetric Parallel Group Support in FlashFlex](#asymmetric-parallel-group-support-in-flashflex)
-  - [Tensor Model Parallelism, Pipeline Parallelism and Data Parallelism](parallelisms)
+  - [Parallelisms](parallelisms)
   - [Asymmetric Parallel Group Support](asymmetric-parallel-group-support)
 - [Launching Processes with `torchrun`](launching-processes-with-torchrun)
 - [Launching Processes Independently](launching-processes-independently)
