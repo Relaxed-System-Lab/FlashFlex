@@ -108,6 +108,6 @@ Trining with 1x8x3080Ti-12G, 1x8x3090-24G, and 3x8x4090-24G achieved optimal MFU
 
 Trining with 1x8x3080Ti-12G, 1x8x3090-24G, 1x8x4090-24G, and 1x8xNVIDIA A100 NVLINK-80G achieved optimal MFU of 33.47% and 31.39% for **Llama-2 (7B), Llama-2 (13B)**,  respectively.
 
-Trining with 1x8x3090-24G, 2x4x4090-24G, 4x8x4090-24G, and 1x8xNVIDIA A100 NVLINK-80G achieved optimal MFU of 31.19% and 27.23% for **Llama (30B)**.
+Trining with 1x8x3090-24G, 2x4x4090-24G, 4x8x4090-24G, and 1x8xNVIDIA A100 NVLINK-80G achieved optimal MFU of 27.49% for **Llama (30B)**.
 
-The smallest gap in MFU compared to the homogeneous data center is 0.56%.
+The smallest gap in MFU compared to the homogeneous data center is 0.3%.
