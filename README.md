@@ -20,7 +20,11 @@ This project was made possible thanks to a collaboration with
 
 - [Environment](#environment)
 - [Asymmetric Parallel Group Support in FlashFlex](#asymmetric-parallel-group-support-in-flashflex)
-- [Launching Processes](#launching-processes)
+  - [Parallelisms](#parallelisms)
+  - [Asymmetric Parallel Group Support](#asymmetric-parallel-group-support)
+- [Launch Processes](#launch-processes)
+  - [Launching Processes with Torchrun](#launching-processes-with-torchrun)
+  - [Launch Processes Independently](#launch-processes-independently)
 - [Performance Results](#performance-results)
 
 ## Environment
@@ -46,13 +50,13 @@ FlashFlex introduces a novel approach with its Asymmetric Parallel Group Support
 - `--global_bsz_size`: This parameter accepts a series of numbers, and they will be assigned as each pipeline's batch size.
 - `--chunks`: This parameter accepts a series of numbers, and they decides number of micro-batchs of each pipeline.
 
-## Launching Processes
+## Launch Processes
 
-### Launching Processes with `torchrun`
+### Launch Processes with Torchrun
 
 When all the machines have the same number of GPUs, launching by `torchrun` is a good choice. It is a standard way to launch the distributed system in this case. An example could be seen in `scripts/train.sh`. 
 
-### Launching Processes Independently
+### Launch Processes Independently
 
 In the case when different machines have different number of processes to launch, the only thing to do is to edit the `scripts/generate_hetero_scripts.sh`. The critical arguments are introduced below.
 
