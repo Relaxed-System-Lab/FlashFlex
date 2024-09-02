@@ -113,6 +113,7 @@ Trining with 1x8x3090-24G, 2x4x4090-24G, 4x8x4090-24G, and 1x8xNVIDIA A100 NVLIN
 
 The smallest gap in MFU compared to the homogeneous data center is 0.56%
 
+[exp_1.pdf](https://github.com/user-attachments/files/16835060/exp_1.pdf)
 
 
 
