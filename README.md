@@ -10,7 +10,8 @@ Key features include:
 
 This project was made possible thanks to a collaboration with
 
-<img src="https://github.com/user-attachments/assets/18cc0691-36b4-41a6-ac2d-511d8fa9f250" width="434" height="150" alt="hkust_pku">
+<img src="https://github.com/user-attachments/assets/5ebf23cd-e95e-46c3-abbb-f2f2d60611f9" width="466" height="150" alt="hkust_pku">
+
 
 ----------
 
