@@ -20,11 +20,11 @@ This project was made possible thanks to a collaboration with
 
 - [Environment](#environment)
 - [Asymmetric Parallel Group Support in FlashFlex](#asymmetric-parallel-group-support-in-flashflex)
-  - [Tensor Model Parallelism, Pipeline Parallelism and Data Parallelism](Tensor-Model-Parallelism-,-Pipeline-Parallelism-and-Data-Parallelism)
-  - [Asymmetric Parallel Group Support](Asymmetric-Parallel-Group-Support)
-- [Launching Processes with `torchrun`](Launching-Processes-with-`torchrun`)
-- [Launching Processes Independently](Launching-Processes-Independently)
-- [Performance Results](Performance-Results)
+  - [Tensor Model Parallelism, Pipeline Parallelism and Data Parallelism](parallelisms)
+  - [Asymmetric Parallel Group Support](asymmetric-parallel-group-support)
+- [Launching Processes with `torchrun`](launching-processes-with-torchrun)
+- [Launching Processes Independently](launching-processes-independently)
+- [Performance Results](performance-results)
 
 ## Environment
 
@@ -32,7 +32,7 @@ FlashFlex is well tested on docker image `nvcr.io/nvidia/pytorch:24.02-py3`, whi
 
 ## Asymmetric Parallel Group Support in FlashFlex
 
-### Tensor Model Parallelism, Pipeline Parallelism and Data Parallelism
+### Parallelisms
 
 3D parallelism are used to distribute the workload of pretraining Llama-2 models.
 
@@ -49,7 +49,7 @@ FlashFlex introduces a novel approach with its Asymmetric Parallel Group Support
 - `--global_bsz_size`: This parameter accepts a series of numbers, and they will be assigned as each pipeline's batch size.
 - `--chunks`: This parameter accepts a series of numbers, and they decides number of micro-batchs of each pipeline.
 
-## Launching Processes with `torchrun`
+## Launching Processes with torchrun
 
 When all the machines have the same number of GPUs, launching by `torchrun` is a good choice. It is a standard way to launch the distributed system in this case. An example could be seen in `scripts/train.sh`. 
 
