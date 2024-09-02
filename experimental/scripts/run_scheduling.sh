@@ -1,0 +1,12 @@
+python3 main.py \
+--model-size llama-7b \
+--npipeline 2 \
+--inter_bw 0.5 \
+--global_bsz 24 \
+--micro_bsz 2 \
+--machine_config_path machine_amounts.json \
+--log_interval 20 \
+--niter 40 \
+--verbose true \
+# --not_use_tp \
+# --apply_random_strategy \

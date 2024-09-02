@@ -1,0 +1,13 @@
+python3 simulation.py \
+--model-size llama-13b \
+--machine_config_path machine_amounts.json \
+--niter 1 \
+--npipeline 1 \
+--inter_bw 1 \
+--accum-iter 1 \
+--global_bsz 10 \
+--micro_bsz 1 \
+--estimate_total_layers 40 \
+--estimate_strategy '[[1,1,1,1]]' \
+--estimate_layer_partition '[[25,5,5,5],]' \
+--strategy_device_ids '[[[2], [3], [5], [6]], ]' \
