@@ -23,7 +23,7 @@ This project was made possible thanks to a collaboration with
   - [Parallelisms](#parallelisms)
   - [Asymmetric Parallel Group Support](#asymmetric-parallel-group-support)
 - [Launch Processes](#launch-processes)
-  - [Launching Processes with Torchrun](#launching-processes-with-torchrun)
+  - [Launching Processes with Torchrun](#launch-processes-with-torchrun)
   - [Launch Processes Independently](#launch-processes-independently)
 - [Performance Results](#performance-results)
 
