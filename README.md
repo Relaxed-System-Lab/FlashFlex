@@ -1,4 +1,4 @@
-# FlashFlex: Accommodating Large Language Model Training over Heterogeneous Environment
+# FlashFlex: Accommodating Large Language Model Training over Heterogeneous Environment [[paper](https://arxiv.org/pdf/2409.01143)]
 
 FlashFlex is a roubost system that accomodates **hybrid 3D parallelism** for Llama-2 model pretraining. 
 Key features include:
@@ -102,7 +102,7 @@ bash scripts/batch_run_scripts.sh
 
 ![graph_partitioning_algorithm](https://github.com/user-attachments/assets/bb536801-8cf9-4323-a54e-13be4b2fd3d3)
 
-The detailed explanation of the algorithm and its workings is provided in the paper.
+The detailed explanation of the algorithm and its workings is provided in the [paper](https://arxiv.org/pdf/2409.01143).
 
 ## Performance Results
 Experimental results provide a detailed comparison in gap of MFU in training **Llama-2 (7B), Llama-2 (13B), Llama (30B)**. 
