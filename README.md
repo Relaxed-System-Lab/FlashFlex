@@ -98,9 +98,7 @@ bash scripts/batch_run_scripts.sh
 
 ## Hierarchical Graph Partitioning Algorithm
 
-**FlashFlex** formulates the scheduling problem of allocating the LLM training computation over a set of heterogeneous GPU devices as a constrained optimization problem. To solve this problem efficiently, **FlashFlex** proposes a two-phase optimization approach that employs a graph partitioning algorithm to effectively coordinate parallel strategies for the given set of devices. An example of graph partitioning over heterogeneous GPUs is demonstrated below.
-
-![graph_partitioning_algorithm](https://github.com/user-attachments/assets/bb536801-8cf9-4323-a54e-13be4b2fd3d3)
+**FlashFlex** formulates the scheduling problem of allocating the LLM training computation over a set of heterogeneous GPU devices as a constrained optimization problem. To solve this problem efficiently, **FlashFlex** proposes a two-phase optimization approach that employs a graph partitioning algorithm to effectively coordinate parallel strategies for the given set of devices.
 
 The detailed explanation of the algorithm and its workings is provided in the [paper](https://arxiv.org/pdf/2409.01143).
 
