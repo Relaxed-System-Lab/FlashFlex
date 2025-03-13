@@ -1,6 +1,6 @@
-# FlashFlex: Accommodating Large Language Model Training over Heterogeneous Environment [[paper](https://arxiv.org/pdf/2409.01143)]
+# HexiScale: Accommodating Large Language Model Training over Heterogeneous Environment [[paper](https://arxiv.org/pdf/2409.01143)]
 
-FlashFlex is a roubost system that accomodates **hybrid 3D parallelism** for Llama-2 model pretraining. 
+HexiScale is a roubost system that accomodates **hybrid 3D parallelism** for Llama-2 model pretraining. 
 Key features include:
 - Versitile support for hybrid pipeline parallelism, tensor parallelism and data parallelism.
 - Each transformer layer could have different tensor model parallelism size.
@@ -18,7 +18,7 @@ This project was made possible thanks to a collaboration with
 ## Content
 
 - [Environment](#environment)
-- [Asymmetric Parallel Group Support in FlashFlex](#asymmetric-parallel-group-support-in-flashflex)
+- [Asymmetric Parallel Group Support in HexiScale](#asymmetric-parallel-group-support-in-HexiScale)
   - [Parallelisms](#parallelisms)
   - [Asymmetric Parallel Group Support](#asymmetric-parallel-group-support)
 - [Launch Processes](#launch-processes)
@@ -29,9 +29,9 @@ This project was made possible thanks to a collaboration with
 
 ## Environment
 
-FlashFlex is well tested on docker image `nvcr.io/nvidia/pytorch:24.02-py3`, which contains `torch==2.3.0` and `flash-attn==2.4.2`, with the utilization of CUDA version 12.3. It would be easy to build the environment by the provided `Dockerfile`.
+HexiScale is well tested on docker image `nvcr.io/nvidia/pytorch:24.02-py3`, which contains `torch==2.3.0` and `flash-attn==2.4.2`, with the utilization of CUDA version 12.3. It would be easy to build the environment by the provided `Dockerfile`.
 
-## Asymmetric Parallel Group Support in FlashFlex
+## Asymmetric Parallel Group Support in HexiScale
 
 ### Parallelisms
 
@@ -43,7 +43,7 @@ FlashFlex is well tested on docker image `nvcr.io/nvidia/pytorch:24.02-py3`, whi
 
 ### Asymmetric Parallel Group Support
 
-FlashFlex introduces a novel approach with its Asymmetric Parallel Group Support, driven by some critical parameters: 
+HexiScale introduces a novel approach with its Asymmetric Parallel Group Support, driven by some critical parameters: 
 
 - `--hetero_configs`: This parameter is a 2-dimensional python list, it tells the overall pipeline layouts of given GPUs.
 - `--layer_partitions`: This parameter is also a 2-dimensional python list, which describes how to split transformer layers for each pipeline and each stage.
@@ -98,7 +98,7 @@ bash scripts/batch_run_scripts.sh
 
 ## Hierarchical Graph Partitioning Algorithm
 
-**FlashFlex** formulates the scheduling problem of allocating the LLM training computation over a set of heterogeneous GPU devices as a constrained optimization problem. To solve this problem efficiently, **FlashFlex** proposes a two-phase optimization approach that employs a graph partitioning algorithm to effectively coordinate parallel strategies for the given set of devices.
+**HexiScale** formulates the scheduling problem of allocating the LLM training computation over a set of heterogeneous GPU devices as a constrained optimization problem. To solve this problem efficiently, **HexiScale** proposes a two-phase optimization approach that employs a graph partitioning algorithm to effectively coordinate parallel strategies for the given set of devices.
 
 The detailed explanation of the algorithm and its workings is provided in the [paper](https://arxiv.org/pdf/2409.01143).
 
@@ -109,7 +109,7 @@ Homogeneous data center with 2x8xA100-PCIe and TCP connections training by **Meg
 
 Homogeneous data center with 4x8xA100-PCIe and TCP connections training by **Megatron** achieved 27.79% **Llama (30B)**.
 
-**FlashFlex** under heterogeneous settings with the *same* total **FLOPS** can achieve MFU in small gap:
+**HexiScale** under heterogeneous settings with the *same* total **FLOPS** can achieve MFU in small gap:
 
 Trining with 1x8x3080Ti-12G, 1x8x3090-24G, and 3x8x4090-24G achieved optimal MFU of 31.19% and 27.23% for **Llama-2 (7B), Llama-2 (13B)**,  respectively.
 

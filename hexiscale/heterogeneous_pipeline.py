@@ -1,18 +1,18 @@
 import torch
 import torch.nn as nn
 import numpy as np
-from flashflex.utils import unwrap_model, chunk_batch
+from hexiscale.utils import unwrap_model, chunk_batch
 from typing import Union, Optional, Tuple, List
 import operator
 import copy
-from flashflex import wrap_modules_data_parallel, wrap_modules_checkpoint
+from hexiscale import wrap_modules_data_parallel, wrap_modules_checkpoint
 import torch.distributed as dist
 from typing import Any
-from flashflex.utils import *
-from flashflex.fsdp_hooks_utils import *
-from flashflex.fsdp_comm_utils import get_fsdp_comm_config
+from hexiscale.utils import *
+from hexiscale.fsdp_hooks_utils import *
+from hexiscale.fsdp_comm_utils import get_fsdp_comm_config
 from torch.distributed.fsdp import FullyShardedDataParallel as FSDP
-from flashflex.fsdp_comm_utils import initialize_comm_utils, hetero_comm_ddp, reduce_scatter_hook_with_ga
+from hexiscale.fsdp_comm_utils import initialize_comm_utils, hetero_comm_ddp, reduce_scatter_hook_with_ga
 
 Shape = Union[List[int], torch.Size]
 

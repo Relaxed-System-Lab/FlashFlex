@@ -5,7 +5,7 @@ import torch
 from torch import nn
 import numpy as np
 from typing import Any
-from flashflex import PipelineParallel, PipeSequential
+from hexiscale import PipelineParallel, PipeSequential
 from flash_attn.modules.block import Block
 import torch.distributed as dist
 from torch.nn.parallel import DistributedDataParallel as DDP

@@ -9,7 +9,7 @@ from torch.distributed.fsdp._runtime_utils import _reduce_grad
 from torch.distributed.fsdp._flat_param import FlatParamHandle
 from torch.distributed.fsdp._common_utils import _FSDPState
 from torch.distributed.algorithms._comm_hooks.default_hooks import DefaultState
-from flashflex import CommGroup
+from hexiscale import CommGroup
 from third_party import get_args
 
 

@@ -7,7 +7,7 @@ from third_party import initialize_megatron
 from third_party import get_args
 from torch.utils.data.distributed import DistributedSampler
 from typing import Tuple, List
-from flashflex import PipelineParallel, gen_hetero_groups, validate_args, update_args
+from hexiscale import PipelineParallel, gen_hetero_groups, validate_args, update_args
 from torch.utils.data import DataLoader
 from torch.profiler import profile, record_function, ProfilerActivity
 import torch.distributed as dist

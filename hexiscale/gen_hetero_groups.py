@@ -5,7 +5,7 @@
 # pp_groups = [[0,2,4],[1,3]]
 # tp_groups = [dist.new_group([0,1]), dist.new_group([2,3]), dist.new_group([4])]
 
-from flashflex import CommGroup
+from hexiscale import CommGroup
 from third_party import get_args
 import torch.distributed as dist
 from .gen_p2p_lists import generate_send_recv_lists
